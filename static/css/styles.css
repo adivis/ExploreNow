@@ -1,0 +1,190 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+ color: white;
+  font-size: 19px;
+  
+}
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #f6f9fe;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.navbar{
+  background-color: #0f5840;
+  font-size: 25px;
+}
+
+.dropbtn{
+  border-radius: 8px;
+  margin-top: 13px;
+}
+.btn{
+  margin-bottom: 6px;
+  margin-right: 4px;
+}
+
+.centered {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+.wd{
+  width: 300px;
+  margin: 3px;
+}
+
+.bg-img{
+  padding-top: 95px;
+  max-width: 80%;
+    width: 55%;
+    display: block; 
+    margin: auto;
+    opacity: 0.5;
+}
+.dropbtn
+  {
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 13px;
+  }
+#myInput{
+    box-sizing: border-box;
+    background-position: 14px 12px;
+    background-repeat: no-repeat ;
+    background: #0f5840;
+    color: white;
+  }
+#myInput:hover{
+    border: 3px solid green;
+  }
+.navbar .search-container {
+    position: relative;
+    display: inline-block;
+  }
+.navbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+ 
+.navbar .search-container button:hover {
+    background: #ccc;
+  }
+nav .navbar-brand:hover{
+    color: black;
+  background-color: #65ddb5;
+  font-size: 25px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 230px;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 5px;
+  }
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    list-style-type: none;
+    display: block;
+    text-decoration: none;
+  }
+  
+.search-container ul{
+    list-style-type: none;
+  }
+.show{
+    display: block;
+  }
+.fields .card-img-top {
+    height: 150px;
+    width: 150px;
+}
+.fields .card {
+  display: block;
+  margin: 22px;
+  border: 2px solid black;
+  background: black;  /* fallback for old browsers */
+
+  box-shadow: 5px 10px 8px #333333;
+  color: white;
+  height: 355px;
+  text-align: center;
+  border-radius: 14px;
+}
+.fields .card:hover{
+  border-color: #fff;
+  box-shadow: 0px 0 25px 12px rgba(65, 147, 255, 0.3);
+}
+.contact .card{
+  height: 100px;
+  background: black;
+ 
+}
+  .mt-50{
+    margin-top: 50px;
+  }
+  .mt-100{
+    margin-top: 100px;
+  }
+  a:hover{
+    color: #0f5840;
+  }
+  .nodecoration ,.card-body{
+    text-decoration: none;
+    color: white;
+  }
+  .contact .profile-img{
+    border-radius: 50%;
+    height: 150%;
+    width: 70%;
+  }
+  .search-container .fa {
+    padding: 3px;
+    font-size: 17px;
+    width: 19px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .contact .card-body .fa {
+    padding: 4px;
+    margin-left: 23px;
+    font-size: 27px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .contact .fa:hover {
+    opacity: 0.7;
+  }
+  
+ .contact .fa-linkedin {
+    background: #3B5998;
+    color: white;
+  }
+  
+ .contact .fa-instagram {
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     border-radius: 3px;
+    color: white;
+  }
