@@ -26,6 +26,12 @@ section {
   text-align: center;
   padding-bottom: 30px;
 }
+.about-img{
+  height: 74%;
+  width: 100%;
+  border-radius: 13px;
+  box-shadow: 0px 0 25px 12px rgba(123, 126, 129, 0.4);
+}
 .navbar{
   background-color: #0f5840;
   font-size: 25px;
@@ -165,8 +171,8 @@ nav .navbar-brand:hover{
     width: 70%;
   }
   .search-container .fa {
-    padding: 3px;
-    font-size: 17px;
+    padding: 4px;
+    font-size: 15px;
     width: 19px;
     text-align: center;
     text-decoration: none;
@@ -195,4 +201,7 @@ nav .navbar-brand:hover{
     background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
      border-radius: 3px;
     color: white;
+  }
+  .big{
+    font-size: 59px;
   }
