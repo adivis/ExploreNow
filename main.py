@@ -3,6 +3,8 @@ import mysql.connector
 import os
 
 app = Flask(__name__)
+
+
 # app.secret_key = os.urandom(24)
 # conn = mysql.connector.connect(host="127.0.0.1", user="root", password="", database="users")
 # cursor = conn.cursor()
@@ -82,7 +84,6 @@ def technologies():
     return render_template('technology.html')
 
 
-
 @app.route("/web-resources")
 def webresources():
     return render_template('webresources.html')
@@ -93,10 +94,14 @@ def business():
     return render_template('business.html')
 
 
-
 @app.route("/industry-trends")
 def trends():
     return render_template('trends.html')
+
+
+@app.route("/common-page")
+def cpage():
+    return render_template("common-page.html")
 
 
 @app.route("/law")
