@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e703f9b0-e7b7-41af-9db5-50c1607d05b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/arts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/arts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/technology.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/technology.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/trends.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/trends.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/webdev.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/webdev.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/webresources.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/webresources.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
