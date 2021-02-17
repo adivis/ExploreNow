@@ -12,15 +12,26 @@
 
     <title>Technologies</title>
     <style>
-        body{
-        margin: 0;
-        padding: 0;
-        background-color: black;
-            color: white;
-        
-        font-size: 19px;
-  
+        @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Newsreader:wght@500&display=swap");
+
+        .heading {
+            font-family: 'Newsreader', serif;
         }
+
+        .para {
+            font-family: 'Lora', serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+
+            font-size: 19px;
+
+        }
+
         .card {
             display: block;
             margin: 22px;
@@ -31,115 +42,146 @@
             height: 455px;
             text-align: center;
         }
-        .nodecoration{
-            text-decoration: none ;
+
+        .nodecoration {
+            text-decoration: none;
         }
-        .mt-50{
+
+        .mt-50 {
             margin-top: 50px;
         }
-        .navbar{
-            background-color:#0f5840;
+
+        .navbar {
+            background-color: #0f5840;
         }
-        .card-img-top{
+
+        .card-img-top {
             height: 150px;
             width: 150px;
         }
-        .card:hover{
-  border-color: #fff;
-  box-shadow: 0px 0 25px 12px rgba(65, 147, 255, 0.3);
-}
+
+        .card:hover {
+            border-color: #fff;
+            box-shadow: 0px 0 25px 12px rgba(65, 147, 255, 0.3);
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark heading fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">Explore Now</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-             
-    
-    
-            </ul>
-    
-          </div>
+            <a class="navbar-brand" href="/">Explore Now</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
         </div>
-      </nav>
-      
+    </nav>
+
     <div class="container mt-50">
-       
+
         <div class="row">
 
             <div class="col-md-6">
-            <div class="card" >
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
-                <div class="card-body">
-                    <h2>Website Development</h2>
-                    <p><strong>Web development</strong> is the building and maintenance of websites; it's the work that
-                        happens behind the scenes to make a website look great, work fast and perform well with a
-                        seamless user experience. &nbsp;<a class="nodecoration" href="/website-development">Learn more...</a></p>
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="heading">Website Development</h2>
+                        <p class="para"><strong>Web development</strong> is the building and maintenance of websites; it's the work
+                            that
+                            happens behind the scenes to make a website look great, work fast and perform well with a
+                            seamless user experience. &nbsp;<a class="nodecoration" href="/website-development" target="_blank">Learn
+                                more...</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="heading">App Development</h2>
+                        <p class="para"><strong>Application development</strong> is the process of creating a computer program or a
+                            set
+                            of programs to perform the different tasks that a business requires.<a class="nodecoration"
+                                href="#"> &nbsp;Learn more...</a> </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="card">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
-                <div class="card-body">
-                    <h2>App Development</h2>
-                    <p><strong>Application development</strong> is the process of creating a computer program or a set
-                        of programs to perform the different tasks that a business requires.<a class="nodecoration" href="#"> &nbsp;Learn more...</a> </p>
-                </div>
-            </div>
-        </div>
-    </div>
         <div class="row">
             <div class="col-md-6">
-            <div class="card">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1485796826113-174aa68fd81b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
-                <div class="card-body">
-                    <h2>Machine Learning</h2>
-                    <p><strong>Machine learning </strong>is a method of data analysis that automates analytical model building. It is a
-                        branch of artificial intelligence based on the idea that systems can learn from data, identify
-                        patterns and make decisions with minimal human intervention. &nbsp;<a class="nodecoration" href="#"> Learn more...</a></p>
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1485796826113-174aa68fd81b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="heading">Machine Learning</h2>
+                        <p class="para"><strong>Machine learning </strong>is a method of data analysis that automates analytical
+                            model building. It is a
+                            branch of artificial intelligence based on the idea that systems can learn from data,
+                            identify
+                            patterns and make decisions with minimal human intervention. &nbsp;<a class="nodecoration"
+                                href="#"> Learn more...</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=798&q=80" alt="Card image cap">
-                <div class="card-body">
-                    <h2>AR/VR</h2>
-                    <p><strong> Augmented reality (AR)</strong> adds digital elements to a live view often by using the
-                        camera on a smartphone.<strong> Virtual reality (VR)</strong> implies a complete immersion experience
-                        that shuts out the physical world. &nbsp;<a class="nodecoration" href="#">Learn more...</a>
-                    </p>
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=798&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="heading">AR/VR</h2>
+                        <p class="para"><strong> Augmented reality (AR)</strong> adds digital elements to a live view often by using
+                            the
+                            camera on a smartphone.<strong> Virtual reality (VR)</strong> implies a complete immersion
+                            experience
+                            that shuts out the physical world. &nbsp;<a class="nodecoration" href="#">Learn more...</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         <div class="row">
 
             <div class="col-md-6">
-            <div class="card" >
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Card image cap">
-                <div class="card-body">
-                    <h2>Robotics</h2>
-                    <p><strong>Robotics</strong> is an interdisciplinary field that integrates computer science and engineering. Robotics involves design, construction, operation, and use of robots &nbsp;<a class="nodecoration" href="#">Learn more...</a></p>
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="heading">Robotics</h2>
+                        <p class="para"><strong>Robotics</strong> is an interdisciplinary field that integrates computer science and
+                            engineering. Robotics involves design, construction, operation, and use of robots &nbsp;<a
+                                class="nodecoration" href="#">Learn more...</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card">
-                <img class="card-img-top" src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
-                    <h2>IOT</h2>
-                    <p><strong>The Internet of Things (IoT)</strong> refers to a system of interrelated, internet-connected objects that are able to collect and transfer data over a wireless network without human intervention. The personal or business possibilities are endless.<a class="nodecoration" href="#"> &nbsp;Learn more...</a> </p>
+            <div class="col-md-6">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+                    <h2 class="heading">IOT</h2>
+                    <p class="para"><strong>The Internet of Things (IoT)</strong> refers to a system of interrelated,
+                        internet-connected objects that are able to collect and transfer data over a wireless network
+                        without human intervention. The personal or business possibilities are endless.<a
+                            class="nodecoration" href="#"> &nbsp;Learn more...</a> </p>
                 </div>
             </div>
         </div>

@@ -14,10 +14,17 @@
     <title>Resources</title>
     
     <style>
+  @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Newsreader:wght@500&display=swap");
 
-:root {
-    --primary-color: #0f5840;
-}
+  .heading{
+    font-family: 'Newsreader', serif;
+  }
+  .para{
+    font-family: 'Lora', serif;
+    }
+  :root {
+      --primary-color: #0f5840;
+  }
 body {
   margin: 0;
   padding: 0;
@@ -75,7 +82,7 @@ section{
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark heading fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">Explore Now</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -100,9 +107,9 @@ section{
     </header>
 
     <section class="section grey mt-100">
-        <h3>Website Development includes two parts:-</h3>
+        <h3 class="heading">Website Development includes two parts:-</h3>
         <details>
-          <summary class="big">Frontend Development</summary>
+          <summary class="big heading">Frontend Development</summary>
           <p>Frontend Development, that is developing the visible part of a website, which users actually see and
             perform
             user actions as available on the website.
@@ -153,7 +160,7 @@ section{
             class="btn btn-light">Click Here</a></p>
         <section>
         </details>
-          <h2>Frontend Frameworks</h2>
+          <h2 class="heading">Frontend Frameworks</h2>
           <details>
             <summary>What is a software framework ?</summary>
             <p>A software framework is an abstract or concrete framework under which software providing generic
