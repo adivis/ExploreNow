@@ -9,10 +9,11 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
   <title>Home</title>
+  <link rel="icon" href="static/img/logo.jpeg" type="image/jpeg">
 </head>
 
 <body>
@@ -20,52 +21,52 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark   heading fixed-top">
       <div class="container-fluid">
-      <a class="navbar-brand" href="/">Explore Now</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#fields">Fields</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact Us</a>
-        </li>
-        
-      </ul>
-      <div class="search-container">
-        <input type="text" onclick="myFunction()" id="myInput" class="dropbtn" placeholder="Search.."
-        onkeyup="searchEngine()">
-        <div id="myDropdown" class="dropdown-content">
-          <ul data-role="listview" id="myUl">
-            <li><a href="/technologies" target="_blank">Technology</a></li>
-            <li><a href="/medicine" target="_blank">Medicine</a></li>
-            <li><a href="/arts" target="_blank">Arts</a></li>
-            <li><a href="/law" target="_blank">Law</a></li>
-            <li><a href="/business" target="_blank">Business</a></li>
-            <li><a href="/commerce" target="_blank">Commerce</a></li>
-              <li><a href="/management" target="_blank">Management</a></li>
-              <li><a href="/general" target="_blank">General</a></li>
-              
-              
-              
-            </ul>
+        <a class="navbar-brand" href="/">Explore Now</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fields">Fields</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+
+          </ul>
+          <div class="search-container">
+            <input type="text" onclick="myFunction()" id="myInput" class="dropbtn" placeholder="Search.."
+              onkeyup="searchEngine()">
+            <div id="myDropdown" class="dropdown-content">
+              <ul data-role="listview" id="myUl">
+                <li><a href="/technologies" target="_blank">Technology</a></li>
+                <li><a href="/medicine" target="_blank">Medicine</a></li>
+                <li><a href="/arts" target="_blank">Arts</a></li>
+                <li><a href="/law" target="_blank">Law</a></li>
+                <li><a href="/business" target="_blank">Business</a></li>
+                <li><a href="/commerce" target="_blank">Commerce</a></li>
+                <li><a href="/management" target="_blank">Management</a></li>
+                <li><a href="/general" target="_blank">General</a></li>
+
+
+
+              </ul>
+            </div>
+            <button type="submit" class="btn btn-success" onclick="redirect()"><i class="fa fa-search"></i></button>
+            <!-- <a class="btn btn-outline-primary" href="/logout">Log Out</a> -->
           </div>
-          <button type="submit" class="btn btn-success" onclick="redirect()"><i class="fa fa-search"></i></button>
-          <!-- <a class="btn btn-outline-primary" href="/logout">Log Out</a> -->
         </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
   <section id="home">
     <img class="bg-img" src="{{ url_for('static', filename='/img/explore.svg')}}" alt="" srcset="">
@@ -75,7 +76,7 @@
       <p style="font-size: 50px;" class="para">Crazy Hunt with Surefire Results.</p>
     </div>
     <br>
-    
+
   </section>
   <hr>
   <!-- about us -->
@@ -87,13 +88,18 @@
           <img src="{{ url_for('static', filename='/img/about.jpeg')}}" class="about-img">
         </div>
         <div class="col-md-8 section-title">
-         
-      <p class="para"><strong>Explore Now</strong> is aimed at providing virtual mentorship to people of all the fields at a one single platform. If you want to learn something about which you don’t have any clue, and need someone to give you a roadmap to excel at it, you are at the right place. Explore Now will give you the exact roadmap you need to kickstart anything. Even if you don’t know about your interest and are confused as to which field to choose, you can take a tour of this platform, as there are a plethora of fields displayed here for you to choose one for yourself. Happy Learning :)</p>
+
+          <p class="para"><strong>Explore Now</strong> is aimed at providing virtual mentorship to people of all the
+            fields at a one single platform. If you want to learn something about which you don’t have any clue, and
+            need someone to give you a roadmap to excel at it, you are at the right place. Explore Now will give you the
+            exact roadmap you need to kickstart anything. Even if you don’t know about your interest and are confused as
+            to which field to choose, you can take a tour of this platform, as there are a plethora of fields displayed
+            here for you to choose one for yourself. Happy Learning :)</p>
         </div>
       </div>
     </div>
-    
-    
+
+
   </section>
   <hr>
   <!-- fields -->
@@ -101,14 +107,14 @@
 
     <h2 class="section-title heading big">Fields</h2>
     <div class="container">
-      
+
       <div class="row">
-        
+
         <div class="col-md-4">
           <div class="card">
             <img class="card-img-top"
-            src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
-            alt="Card image cap">
+              src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+              alt="Card image cap">
             <div class="card-body">
               <h2><a href="/technologies" class="nodecoration heading" target="_blank">Technology</a> </h2>
               <p class="para">Some content</p>
@@ -118,8 +124,8 @@
         <div class="col-md-4">
           <div class="card">
             <img class="card-img-top"
-            src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80"
-            alt="Card image cap">
+              src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80"
+              alt="Card image cap">
             <div class="card-body">
               <h2><a href="/business" class="nodecoration heading" target="_blank">Business</a> </h2>
               <p class="para">Some content</p>
@@ -129,7 +135,7 @@
         <div class="col-md-4">
           <div class="card">
             <img class="card-img-top"
-            src="https://images.unsplash.com/photo-1600693437693-e3eb10df2677?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80">
+              src="https://images.unsplash.com/photo-1600693437693-e3eb10df2677?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80">
             <div class="card-body">
               <h2><a href="/arts" class="nodecoration heading" target="_blank">Arts</a> </h2>
               <p class="para">Some content </p>
@@ -138,12 +144,12 @@
         </div>
       </div>
       <div class="row">
-        
+
         <div class="col-md-4">
           <div class="card">
             <img class="card-img-top"
-            src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
-            alt="Card image cap">
+              src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+              alt="Card image cap">
             <div class="card-body">
               <h2><a href="/commerce" class="nodecoration heading" target="_blank">Commerce</a> </h2>
               <p class="para">Some content</p>
@@ -153,7 +159,7 @@
         <div class="col-md-4">
           <div class="card">
             <img class="card-img-top"
-            src="https://images.unsplash.com/photo-1575505586569-646b2ca898fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1205&q=80">
+              src="https://images.unsplash.com/photo-1575505586569-646b2ca898fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1205&q=80">
             <div class="card-body">
               <h2><a href="/law" class="nodecoration heading" target="_blank">Law</a> </h2>
               <p class="para">Some content</p>
@@ -163,7 +169,7 @@
         <div class="col-md-4">
           <div class="card">
             <img class="card-img-top"
-            src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80">
+              src="https://images.unsplash.com/photo-1542736667-069246bdbc6d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80">
             <div class="card-body">
               <h2><a href="/medicine" class="nodecoration heading" target="_blank">Medicine</a></h2>
               <p class="para">Some content </p>
@@ -172,11 +178,11 @@
         </div>
       </div>
       <div class="row">
-        
+
         <div class="col-md-4">
           <div class="card">
             <img class="card-img-top"
-            src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80">
+              src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80">
             <div class="card-body">
               <h2><a href="/management" class="nodecoration heading" target="_blank">Management</a></h2>
               <p class="para">Some content</p>
@@ -184,76 +190,78 @@
           </div>
         </div>
         <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top"
+          <div class="card">
+            <img class="card-img-top"
               src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80">
-              <div class="card-body">
-                <h2><a href="/general" class="nodecoration heading" target="_blank">General</a> </h2>
-                <p class="para">Some content</p>
-              </div>
+            <div class="card-body">
+              <h2><a href="/general" class="nodecoration heading" target="_blank">General</a> </h2>
+              <p class="para">Some content</p>
             </div>
           </div>
-          <div class="col-md-4">
-            
-            </div>
-         
-          
         </div>
-        
+        <div class="col-md-4">
+
         </div>
-      </section>
-      <hr>
-      <!-- contact us -->
-        <section id="contact" class="contact" >
-          
-      <h2 class="section-title heading big">Contact Us</h2>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="card">
-                      <img class="profile-img" src="{{ url_for('static', filename='/img/anushka.jfif')}}" alt="" srcset="">
-                  <div class="card-body">
-                    <h4 class="para">Anushka Chauhan</h4>
-                    <a href="https://www.instagram.com/anushkachauhan450/"  target="_blank" class="fa fa-instagram"></a>
-                    <a href="https://www.linkedin.com/in/anushka-chauhan-313951194/" target="_blank" class="fa fa-linkedin"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <img class="profile-img" src="{{ url_for('static', filename='/img/divya.jfif')}}" alt="" srcset="">
-                  <div class="card-body">
-                    <h4 class="para">Divya Sharma</h4>
-                    <a href="https://www.instagram.com/divya_sharma813/" target="_blank" class="fa fa-instagram"></a>
-                    <a href="https://www.linkedin.com/in/divya-sharma-2697a81ab/" target="_blank" class="fa fa-linkedin"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <img class="profile-img" src="{{ url_for('static', filename='/img/priya.jfif')}}" alt="" srcset="">
-                  <div class="card-body">
-                    <h4 class="para">Priya Gupta</h4>
-                    <a href="https://www.instagram.com/priyagupta.star/" target="_blank" class="fa fa-instagram"></a>
-                    <a href="https://www.linkedin.com/in/priya-gupta-117828190/" target="_blank" class="fa fa-linkedin"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <img class="profile-img" src="{{ url_for('static', filename='/img/aditi.jpg')}}" alt="" srcset="">
-                  <div class="card-body">
-                    <h4 class="para">Aditi Vishwakarma</h4>
-                    <a href="https://www.instagram.com/adii_vish/" target="_blank" class="fa fa-instagram"></a>
-                    <a href="https://www.linkedin.com/in/aditi-vishwakarma-b121601b6/"  target="_blank" class="fa fa-linkedin"></a>
-                  </div>
-                </div>
-              </div>
+
+
+      </div>
+
+    </div>
+  </section>
+  <hr>
+  <!-- contact us -->
+  <section id="contact" class="contact">
+
+    <h2 class="section-title heading big">Contact Us</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img class="profile-img" src="{{ url_for('static', filename='/img/anushka.jfif')}}" alt="" srcset="">
+            <div class="card-body">
+              <h4 class="para">Anushka Chauhan</h4>
+              <a href="https://www.instagram.com/anushkachauhan450/" target="_blank" class="fa fa-instagram"></a>
+              <a href="https://www.linkedin.com/in/anushka-chauhan-313951194/" target="_blank"
+                class="fa fa-linkedin"></a>
             </div>
           </div>
-        </section>
-        <!-- Optional JavaScript; choose one of the two! -->
-        <script>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img class="profile-img" src="{{ url_for('static', filename='/img/divya.jfif')}}" alt="" srcset="">
+            <div class="card-body">
+              <h4 class="para">Divya Sharma</h4>
+              <a href="https://www.instagram.com/divya_sharma813/" target="_blank" class="fa fa-instagram"></a>
+              <a href="https://www.linkedin.com/in/divya-sharma-2697a81ab/" target="_blank" class="fa fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img class="profile-img" src="{{ url_for('static', filename='/img/priya.jfif')}}" alt="" srcset="">
+            <div class="card-body">
+              <h4 class="para">Priya Gupta</h4>
+              <a href="https://www.instagram.com/priyagupta.star/" target="_blank" class="fa fa-instagram"></a>
+              <a href="https://www.linkedin.com/in/priya-gupta-117828190/" target="_blank" class="fa fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img class="profile-img" src="{{ url_for('static', filename='/img/aditi.jpg')}}" alt="" srcset="">
+            <div class="card-body">
+              <h4 class="para">Aditi Vishwakarma</h4>
+              <a href="https://www.instagram.com/adii_vish/" target="_blank" class="fa fa-instagram"></a>
+              <a href="https://www.linkedin.com/in/aditi-vishwakarma-b121601b6/" target="_blank"
+                class="fa fa-linkedin"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script>
     const searchEngine = () => {
       let filter = document.getElementById("myInput").value.toUpperCase();
       console.log(filter)
